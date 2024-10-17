@@ -1,0 +1,25 @@
+h1 {
+    position: relative;
+    color: red !important;
+}
+
+h1::after{
+    content: "ПОСЛЕ";
+}
+h1::before {content: "ДО";}
+
+h1::first-letter{
+    color: blue;
+}
+
+p::first-line{
+    font-size: 30px;
+    color: purple;
+}
+#title{
+    font-size: 50px;
+}
+
+.page-title{
+    font-size: 30px;
+}
