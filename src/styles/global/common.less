@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: @gray;
-  background-image: url(../assets/images/noize.jpg), url(../assets/images/noise.png);
+  background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
@@ -21,10 +21,10 @@ body {
   line-height: 1.375;
   overflow-x: hidden;
   padding-top: 147px;
-  @media @bw1660 {
+  @media @bw1660{
     padding-top: 111px;
   }
-  @media @bw768 { 
+  @media @bw768{
     padding-top: 70px;
   }
 }
@@ -43,30 +43,26 @@ img {
   height: auto;
   object-fit: cover;
 }
-
 input,
 textarea,
 select {
-  outline: none;
-  box-shadow: none;
-  color: @black;
-  font-family: @font1;
+box-shadow: none;
+outline: none;
+color: @black;
+font-family: @font1;
 }
-
 textarea {
-  resize: none;
+resize: none;
 }
-
 input,
 textarea {
-  &::placeholder {
-    color: @gray2;
-  }
+&::placeholder {
+  color: #6C6C6C;
 }
-
+}
 input:focus,
 textarea:focus {
-  &::placeholder {
-    color: transparent;
-  }
+&::placeholder {
+  color: transparent
+}
 }

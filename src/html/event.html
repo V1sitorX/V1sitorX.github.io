@@ -1,129 +1,49 @@
 <!DOCTYPE html>
-<html lang="ru">
-  @@include('blocks/head.html')
-    <body class="body">
-      @@include('blocks/page-header.html')
-            <main class="main">
-              <div class="event">
-                <div class="link-url">Главная  / Мероприятия / Вечер | The Best of Sade </div>
-                    <div class="event__header">
-                        <picture class="event__header-picture">                    
-                            <img src="assets/images/events/Sade.jpg" alt="sade" class="" />
-                        </picture>
-                    <div class="event-card__title"> Вечер | The Best of Sade</div>
-                    <div class="event-card__description">"Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка."</div>
-                    <div class="event-card__description">Кафе «Птичка» </div>
-                    <div class="event-card__description">Ленина 10 | 2 этаж</div>
-                    <div class="event-card__time">"16.12.2022 | начало 20.00"</div> 
-                </div> 
-                <div class="content">
-                <article class="article">
-                    <div class="article__container">
-                        <div class="article__content content">
-                            <h5>Программа мероприятия:</h5>
-                            <ul>
-                                <li>20:15 — Приветствие гостей</li>
-                                <li>20:30 — Первая подача блюд | Салаты</li>
-                                <li>20:40 — Живой вокал | Композиции 1-3</li>
-                                <li>21:20 — Подача горячих блюд</li>
-                                <li>21:30 — Живой вокал | Композиции 4-7</li>
-                                <li>22:15 — Подача десерта</li>
-                                <li>22:30 — Живой вокал | Композиции 8-9</li>
-                                <li>23:00 — Завершение вечера</li>
-                            </ul>
-                            <h5>The Best Of Sade</h5>
-                            <p>Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные хиты группы, 
-                                раритеты и их любимые треки. </p>
-                            <p>Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры. Она лидировала 
-                                музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.</p>
-                            <ol>
-                                <li>Your Love Is King</li>
-                                <li>Hang On To Your Love</li>
-                                <li>Smooth Operator</li>
-                                <li>Jezebel</li>
-                                <li>The Sweetest Taboo</li>
-                                <li>Is It A Crime</li>
-                                <li>Never As Good As The First Time</li>
-                                <li>Love Is Stronger Than Pride</li>
-                                <li>Paradise</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <form class="reserve form">
-                            <div class="reserve__check">
-                                <h5 class="">Забронировать столик</h5>
-                                <div class="reserve__check-list">
-                                    <label class="check check">
-                                        <input name="agree" type="checkbox" class="check__input--red check__input" checked/>
-                                        <span class="check__mark--red check__mark"></span> 
-                                        <span class="reserve__check-label check__label--red check__label">1 стол</span>
-                                    </label>
-                                    <label class="check check">
-                                        <input name="agree" type="checkbox" class="check__input"/>
-                                        <span class="check__mark"></span> 
-                                        <span class="reserve__check-label check__label">2 стол</span>
-                                    </label>
-                                    <label class="check">
-                                        <input name="agree" type="checkbox" class="check__input"/>
-                                        <span class="check__mark"></span> 
-                                        <span class="reserve__check-label check__label">3 стол</span>
-                                    </label>
-                                    <label class="check check--red">
-                                        <input name="agree" type="checkbox" class="check__input"/>
-                                        <span class="check__mark"></span> 
-                                        <span class="reserve__check-label check__label">4 стол</span>
-                                    </label>
-                                    <label class="check--gray check">
-                                        <span class="check__mark--gray check__mark"></span> 
-                                        <span class="reserve__check-label check__label--gray check__label">5 стол</span>
-                                    </label>
-                                    <label class="check">
-                                        <input name="agree" type="checkbox" class="check__input"/>
-                                        <span class="check__mark"></span> 
-                                        <span class="reserve__check-label check__label">6 стол</span>
-                                    </label>
-                                    <label class="check check--red">
-                                        <input name="agree" type="checkbox" class="check__input--red check__input" checked/>
-                                        <span class="check__mark--red check__mark"></span> 
-                                        <span class="reserve__check-label check__label--red check__label">7 стол</span>
-                                    </label>
-                                    </label>
-                                    <label class="check check--red">
-                                        <input name="agree" type="checkbox" class="check__input--red check__input" checked/>
-                                        <span class="check__mark--red check__mark"></span> 
-                                        <span class="reserve__check-label check__label--red check__label">8 стол</span>
-                                    </label>
-                                    <label class="check check--red">
-                                        <input name="agree" type="checkbox" class="check__input--red check__input" checked/>
-                                        <span class="check__mark--red check__mark"></span> 
-                                        <span class="reserve__check-label check__label--red check__label">9 стол</span>
-                                    </label>
-                                    <label class="check">
-                                        <input name="agree" type="checkbox" class="check__input" checked/>
-                                        <span class="check__mark"></span> 
-                                        <span class="reserve__check-label check__label">10 стол</span>
-                                    </label>
-                                    <label class="check">
-                                        <input name="agree" type="checkbox" class="check__input"/>
-                                        <span class="check__mark"></span> 
-                                        <span class="reserve__check-label check__label">11 стол</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="reserve__scheme">
-                                <h5 class="reserve__header header__h4 header">Сцена</h5>
-                                <svg class="page-header__logo-icon" width="780" height="399">
-                                    <use xlink:href="assets/icons/symbols.svg#map"></use>
-                                </svg>
-                            </div>
-                            <div class="reserve__order"></div>
-                            <div class="reserve__legend"></div>
-                        </form>
-                    </div>
-                </article>
+<html lang="en">
+@@include('blocks/head.html')
+<body class="body">
+    @@include('blocks/page-header.html')
+    <main class="main">
+        <div class="event">
+            <div class="event__container">
+                @@include('blocks/event-preview.html')
+                <div class="event__content content">
+                    <h5>Программа мероприятий</h5>
+                    <ul>
+                        <li>20:15 — Приветствие гостей</li>
+                        <li>20:30 — Первая подача блюд | Салаты</li>
+                        <li>20:40 — Живой вокал | Композиции 1-3</li>
+                        <li>21:20 — Подача горячих блюд</li>
+                        <li>21:30 — Живой вокал | Композиции 4-7</li>
+                        <li>22:15 — Подача десерта</li>
+                        <li>22:30 — Живой вокал | Композиции 8-9</li>
+                        <li>23:00 — Завершение вечера</li>
+                    </ul>
+                    <h5>The Best Of Sade</h5>
+                    <p>Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные
+                        хиты группы, раритеты и их любимые треки.</p>
+                    <p>Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+                        Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав
+                        более 2 миллионов копий в Европе.</p>
+                    <ol>
+                        <li>Your Love Is King</li>
+                        <li>Hang On To Your Love </li>
+                        <li>Smooth Operator </li>
+                        <li>Jezebel </li>
+                        <li>The Sweetest Taboo </li>
+                        <li>Is It A Crime </li>
+                        <li>Never As Good As The First Time </li>
+                        <li>Love Is Stronger Than Pride </li>
+                        <li>Paradise </li>
+                    </ol>
+                </div>
+                @@include('blocks/reserve.html')
             </div>
-              </main>
-              @@include('blocks/page-footer.html')
-    </body>
+        </div>
+    </main>
+    @@include('blocks/page-footer.html')
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/jquery.validate-init.js"></script>
+    <script src="scripts/main.min.js"></script>
+</body>
 </html>

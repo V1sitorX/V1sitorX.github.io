@@ -1,73 +1,53 @@
-.event-card {
-    display: flex;
-    width: 405px;
-    max-width: 100%;
-    min-width: 280px;
-    &__link {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        width: 100%;
-        color: @black;
-        &:hover .event-card__title{
-            color: @red;
-            text-decoration-color: @red;
+.doit{
+    box-sizing: border-box;
+    font-family: @font3;
+    position: relative;
+    width: 100%;
+    text-align: right;
+    white-space: nowrap;
+    pointer-events: none;
+    overflow: hidden;
+    font-size: 6vw;
+    line-height: 1.2;
+    font-weight: 700;
+    @media @full-hd{
+        font-size: 128px;
+    }
+    @media @bw1660{
+        font-size: 6.5vw;
+    }
+    @media @bw1020{
+        font-size: 8.5vw;
+    }
+    @media @bw600{
+        font-size: 10.5vw;
+    }
+    &__text{
+        margin: 0 0 0 -2.5vw;
+        @media @bw1020{
+            display: flex;
+            flex-direction: column;
+        }
+        br{
+            @media @bw1020{
+                display: none;
+            }
         }
     }
-    &__picture {
-        display: block;
-        width: 100%;
-        margin: 0 0 25px;
-        overflow: hidden;
-        font-size: 0px;
-        text-decoration: none;
-        position: relative;
-        &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            padding-top: 107.16%;
+    &__word1{
+        text-align: left;
+    }
+    &__word2{
+        @media @bw1020{
+            margin-right: -10.6vw;
+        }
+        @media @bw600{
+            margin-right: -17.6vw;
         }
     }
-    &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    &__title {
-        margin: 0 0 15px;
-        min-height: 66px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.3;
-        color: @black;
-        text-decoration: underline transparent;
-        transition: color 0.2s, text-decoration 0.2s;
-        @media @bw1660 {
-            margin: 0 0 10px;
+    &__word3{
+        @media @bw600{
+            margin-left: -14vw;
         }
-        @media @bw1020 {
-            min-height: 21px;
-            font-size: 16px;
-            line-height: 21px;
-        }
-    }
-    &__text {
-        margin: 0 0 auto;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.3;
-        @media @bw1020 {
-            font-size: 14px;
-            line-height: 19px;
-        }
-    }
-    &__time {
-        font-size: 15px;
-        display: block;
-        font-weight: 300;
     }
 }
